@@ -4,33 +4,33 @@ import java.util.Date;
 
 public class Message {
 
-    private String text;
-    private String name;
+    private double latitude;
+    private double longitude;
     private long time;
 
     public Message() {
     }
 
-    public Message(String name, String text) {
-        this.text = text;
-        this.name = name;
+    public Message(double latitude, double longitude) {
+        this.latitude = latitude;
+        this.longitude = longitude;
         this.time = new Date().getTime();
     }
 
-    public String getText() {
-        return text;
+    public double getLatitude() {
+        return latitude;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
     }
 
-    public String getName() {
-        return name;
+    public double getLongitude() {
+        return longitude;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
     }
 
     public long getTime() {
